@@ -9,6 +9,7 @@ const fs = require('fs');
 const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
+const path = require("path");
 
 mongoose
     .connect(process.env.MONGO_URI, {
