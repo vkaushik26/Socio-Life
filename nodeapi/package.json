@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "heroku-postbuild": "cd react-front && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "vaibhav kaushik",
   "license": "ISC",
