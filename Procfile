@@ -1,3 +1,2 @@
-web: node app.js
-cd react-front
-server: npm int && npm start
+web: cd react-front && npm i && npm start
+server: npm i && npm start
