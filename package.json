@@ -1,9 +1,12 @@
 {
   "name": "nodeapi",
   "version": "1.0.0",
+  "homepage": "https://vkaushik26.github.io/Socio-Life/",
   "description": "node js api",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "heroku-postbuild": "cd react-front && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
